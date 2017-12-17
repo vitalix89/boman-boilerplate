@@ -1,11 +1,12 @@
 import express from 'express';
 import { bomanMiddleware, createSchema } from 'boman';
 import db from './models';
+import './db';
 
 const app = express();
 
 app.use((req, res, next) => {
-  req.user = { id: 123, isNarco: 0 };
+  req.user = { id: 123, isNarco: 1 };
   next();
 });
 
