@@ -1,6 +1,6 @@
 import express from 'express';
 import { bomanMiddleware, createSchema } from 'boman';
-import db from './db';
+import db from './models';
 
 const app = express();
 
